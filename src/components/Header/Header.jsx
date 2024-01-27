@@ -414,13 +414,10 @@ const Header = () => {
           </div>
         </form>
         <div
-          className="logo w-48 h-28 cursor-pointer flex justify-center items-center md1360:w-36  md1000:w-28"
+          className="logo w-52 h-24 cursor-pointer flex justify-center items-center md1360:w-36 md1360:h-16  md1000:w-28 min760:h-12"
           onClick={() => navigate("/")}
         >
-          <img
-            src="../../../public/logo.png"
-            className="w-full h-full object-cover"
-          />
+          <img src="/logo.png" className="w-full h-full object-cover" />
         </div>
         <Cart />
       </div>

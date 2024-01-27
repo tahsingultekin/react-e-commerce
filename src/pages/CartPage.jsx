@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const CartPage = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center min500:w-[380px] overflow-x-hidden">
       <Banner />
       <Header />
       <Navbar />

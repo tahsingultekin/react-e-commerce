@@ -115,7 +115,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Smartphones")}
                   >
                     <img
-                      src="../../../public/navbar-photos/smartphones/img-1.avif"
+                      src="/navbar-photos/smartphones/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -125,7 +125,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Smartphones")}
                   >
                     <img
-                      src="../../../public/navbar-photos/smartphones/img-2.avif"
+                      src="/navbar-photos/smartphones/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -325,7 +325,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Laptops")}
                   >
                     <img
-                      src="../../../public/navbar-photos/laptops/img-1.avif"
+                      src="/navbar-photos/laptops/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -336,7 +336,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Laptops")}
                   >
                     <img
-                      src="../../../public/navbar-photos/laptops/img-2.avif"
+                      src="/navbar-photos/laptops/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -494,7 +494,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Fragrances")}
                   >
                     <img
-                      src="../../../public/navbar-photos/fragrances/img-1.avif"
+                      src="/navbar-photos/fragrances/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -505,7 +505,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Fragrances")}
                   >
                     <img
-                      src="../../../public/navbar-photos/fragrances/img-2.avif"
+                      src="/navbar-photos/fragrances/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -636,7 +636,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Skincare")}
                   >
                     <img
-                      src="../../../public/navbar-photos/skincare/img-1.avif"
+                      src="/navbar-photos/skincare/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -647,7 +647,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Skincare")}
                   >
                     <img
-                      src="../../../public/navbar-photos/skincare/img-2.avif"
+                      src="/navbar-photos/skincare/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -925,7 +925,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Groceries")}
                   >
                     <img
-                      src="../../../public/navbar-photos/groceries/img-1.avif"
+                      src="/navbar-photos/groceries/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -936,7 +936,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Groceries")}
                   >
                     <img
-                      src="../../../public/navbar-photos/groceries/img-2.avif"
+                      src="/navbar-photos/groceries/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1174,7 +1174,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Furniture")}
                   >
                     <img
-                      src="../../../public/navbar-photos/furniture/img-1.avif"
+                      src="/navbar-photos/furniture/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1185,7 +1185,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Furniture")}
                   >
                     <img
-                      src="../../../public/navbar-photos/furniture/img-2.avif"
+                      src="/navbar-photos/furniture/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1409,7 +1409,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Mens-Shirts")}
                   >
                     <img
-                      src="../../../public/navbar-photos/mens-shirts/img-1.avif"
+                      src="/navbar-photos/mens-shirts/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1420,7 +1420,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Mens-Shirts")}
                   >
                     <img
-                      src="../../../public/navbar-photos/mens-shirts/img-2.avif"
+                      src="/navbar-photos/mens-shirts/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1637,7 +1637,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Mens-Watches")}
                   >
                     <img
-                      src="../../../public/navbar-photos/mens-watches/img-1.avif"
+                      src="/navbar-photos/mens-watches/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1648,7 +1648,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Mens-Watches")}
                   >
                     <img
-                      src="../../../public/navbar-photos/mens-watches/img-2.avif"
+                      src="/navbar-photos/mens-watches/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1891,7 +1891,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Womens-Shoes")}
                   >
                     <img
-                      src="../../../public/navbar-photos/womens-shoes/img-1.avif"
+                      src="/navbar-photos/womens-shoes/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -1902,7 +1902,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Womens-Shoes")}
                   >
                     <img
-                      src="../../../public/navbar-photos/womens-shoes/img-2.avif"
+                      src="/navbar-photos/womens-shoes/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -2066,7 +2066,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Sunglasses")}
                   >
                     <img
-                      src="../../../public/navbar-photos/sunglasses/img-1.avif"
+                      src="/navbar-photos/sunglasses/img-1.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />
@@ -2077,7 +2077,7 @@ const Navbar = () => {
                     onClick={() => navigate("/categories/Sunglasses")}
                   >
                     <img
-                      src="../../../public/navbar-photos/sunglasses/img-2.avif"
+                      src="/navbar-photos/sunglasses/img-2.avif"
                       alt="smartphone"
                       className=" w-full h-full object-cover object-center"
                     />

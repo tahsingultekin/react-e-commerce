@@ -1,0 +1,24 @@
+.li {
+  border: 1px solid #65b741;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #65b741 transparent transparent transparent;
+}
+
+.slick-arrow {
+  display: none !important;
+}

@@ -417,7 +417,10 @@ const Header = () => {
           className="logo w-48 h-28 cursor-pointer flex justify-center items-center md1360:w-36  md1000:w-28"
           onClick={() => navigate("/")}
         >
-          <img src="../../../public/logo.svg" className="w-full h-full" />
+          <img
+            src="../../../public/logo.png"
+            className="w-full h-full object-cover"
+          />
         </div>
         <Cart />
       </div>

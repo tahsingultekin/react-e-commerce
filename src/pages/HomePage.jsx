@@ -11,7 +11,7 @@ import TabMenu from "../components/TabMenu/TabMenu";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center overflow-x-hidden">
       <Banner />
       <Header />
       <Navbar />

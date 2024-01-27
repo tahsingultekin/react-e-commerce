@@ -6,7 +6,7 @@ const FilterMenu = () => {
     useContext(SingleContext);
 
   return (
-    <div className="filter-wrapper w-full h-16 my-3 border-y-2 flex justify-between items-center px-3 md1360:w-[1000px] md1360:px-10 md1000:w-[760px] min760:w-[500px] min500:w-[370px] ">
+    <div className="filter-wrapper w-[1120px] h-16 my-3 border-y-2 flex justify-between items-center px-3 md1360:w-[1000px] md1360:px-10 md1000:w-[760px] min760:w-[500px] min500:w-[370px] ">
       <div className="icons flex gap-5 text-xl min760:hidden">
         <i className="fa-solid fa-table-cells cursor-pointer"></i>
         <i className="fa-solid fa-list cursor-pointer"></i>

@@ -38,7 +38,7 @@ const Products = () => {
   };
 
   return (
-    <ContainerLayout>
+    <div className="w-[82.5rem] md1360:w-[1000px] md1000:w-[760] min760:w-[500px] min500:w-[350px]">
       {loading && (
         <div style={spinnerContainerStyle}>
           <Spin size="large" />
@@ -58,7 +58,7 @@ const Products = () => {
           pageSize={productsPerPage}
         />
       </div>
-    </ContainerLayout>
+    </div>
   );
 };
 

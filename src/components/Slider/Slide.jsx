@@ -46,41 +46,41 @@ const Slide = (props) => {
           {...settings}
         >
           <img
-            src="../../../public/home-slider/img-1.jpeg"
+            src="../../../public/home-slider/img-1.png"
             alt=""
             className="h-[25rem] object-cover object-center"
           />
 
           <img
-            src="../../../public/home-slider/img-2.webp"
+            src="../../../public/home-slider/img-2.png"
             alt=""
             className="h-[25rem] object-cover object-center"
           />
 
           <img
-            src="../../../public/home-slider/img-3.webp"
+            src="../../../public/home-slider/img-3.png"
             alt=""
             className="h-[25rem] object-cover object-center"
           />
 
           <img
-            src="../../../public/home-slider/img-4.jpeg"
+            src="../../../public/home-slider/img-4.png"
             alt=""
             className="h-[25rem] object-cover object-center"
           />
 
           <img
-            src="../../../public/home-slider/img-5.jpeg"
+            src="../../../public/home-slider/img-5.png"
             alt=""
             className="h-[25rem] object-cover object-center"
           />
           <img
-            src="../../../public/home-slider/img-6.avif"
+            src="../../../public/home-slider/img-6.png"
             alt=""
             className="h-[25rem] object-cover object-right-top"
           />
           <img
-            src="../../../public/home-slider/img-7.webp"
+            src="../../../public/home-slider/img-7.png"
             alt=""
             className="h-[25rem] object-cover object-right-top"
           />

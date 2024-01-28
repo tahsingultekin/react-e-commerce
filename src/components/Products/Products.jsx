@@ -38,14 +38,14 @@ const Products = () => {
   };
 
   return (
-    <div className="w-[82.5rem] md1360:w-[1000px] md1000:w-[760] min760:w-[500px] min500:w-[350px]">
+    <div className="w-[82.5rem] flex flex-col items-center md1360:w-[1000px] md1000:w-[760] min760:w-[500px] min500:w-[380px]">
       {loading && (
         <div style={spinnerContainerStyle}>
           <Spin size="large" />
         </div>
       )}
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex  flex-wrap justify-center min500:w-[400px]">
         {currentProducts.map((product) => (
           <ProductItem product={product} key={product.id} />
         ))}

@@ -137,7 +137,7 @@ const Categories = () => {
             </span>
           </h2>
 
-          <div className="products flex flex-wrap w-full min-h-[800px] justify-center  px-16 md1360:w-[960px] md1000:w-[760px] min760:w-[500px] min500:w-[380px]">
+          <div className="products flex flex-wrap w-full min-h-[800px] justify-center  px-16 md1360:w-[960px] md1000:w-[760px] min760:w-[500px] min500:w-[480px] min500:px-0">
             {filteredProducts
               .slice(indexOfFirstProduct, indexOfLastProduct)
               .map((product) => (

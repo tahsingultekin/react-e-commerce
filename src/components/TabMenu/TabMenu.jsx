@@ -63,12 +63,14 @@ const TabMenu = () => {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
           infinite: true,
           speed: 500,
           dots: false,
+          centerMode: true,
+          centerPadding: "20px",
         },
       },
     ],
@@ -108,12 +110,12 @@ const TabMenu = () => {
           </li>
         </ul>
 
-        <div className="px-8">
+        <div className="tab-slider flex justify-center px-8 min500:w-[380px] min500:px-0">
           <div className={` ${isActive === "showcase" ? "block" : "hidden"}`}>
             <Slider
               {...settings}
               key={showcaseKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px] min500:px-8"
+              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
             >
               {showcaseProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;
@@ -121,11 +123,11 @@ const TabMenu = () => {
             </Slider>
           </div>
 
-          <div className={` ${isActive === "bestseller" ? "block" : "hidden"}`}>
+          <div className={`${isActive === "bestseller" ? "block" : "hidden"}`}>
             <Slider
               {...settings}
               key={bestsellerKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px] min500:px-8"
+              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px]   min500:w-[420px] min500:px-0 "
             >
               {bestsellerProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;
@@ -137,7 +139,7 @@ const TabMenu = () => {
             <Slider
               {...settings}
               key={newOnesKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px] min500:px-8"
+              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
             >
               {newOnesProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;

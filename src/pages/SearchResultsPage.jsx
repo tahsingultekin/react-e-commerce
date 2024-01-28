@@ -46,14 +46,14 @@ const SearchResultsPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <Banner />
       <Header />
       <Navbar />
-      <div className="mb-5 h-20 flex justify-center items-center border-b tracking-wide">
+      <div className="mb-5 h-20 flex justify-center items-center border-b tracking-wide ">
         <h1 className="text-xl">Arama Sonuçları Aşağıdaki Gibidir</h1>
       </div>
-      <div className="flex flex-wrap justify-center mb-5">
+      <div className="flex flex-wrap justify-center mb-5 ">
         {searchResults.map((product) => {
           return <ProductItem key={product.id} product={product} />;
         })}

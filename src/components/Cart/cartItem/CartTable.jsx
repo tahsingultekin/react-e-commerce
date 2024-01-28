@@ -4,6 +4,7 @@ import { CurrencyFormat } from "../../../utils/CurrencyFormat";
 import ConfirmModal from "../../ConfirmModel/ConfirmModal";
 import { useNavigate } from "react-router-dom";
 import { message } from "antd";
+import MobileCart from "./MobileCart";
 
 const CartTable = () => {
   const { updateProductQuantity, removeProductFromCart, cartItems } =
@@ -35,16 +36,17 @@ const CartTable = () => {
   };
 
   const decrement = (product, itemId) => {
-    if (product.quantity > 1) {
-      setTempQuantities((prevQuantities) => {
-        const currentQuantity =
-          prevQuantities[itemId] !== undefined
-            ? prevQuantities[itemId]
-            : cartItems.find((item) => item.id === itemId).quantity;
-        const newQuantity = currentQuantity > 0 ? currentQuantity - 1 : 0;
-        return { ...prevQuantities, [itemId]: newQuantity };
-      });
-    }
+    const currentQuantity =
+      tempQuantities[itemId] !== undefined
+        ? tempQuantities[itemId]
+        : product.quantity;
+
+    const newQuantity = currentQuantity > 1 ? currentQuantity - 1 : 1;
+
+    setTempQuantities((prevQuantities) => ({
+      ...prevQuantities,
+      [itemId]: newQuantity,
+    }));
   };
 
   const handleUpdateQuantity = (itemId) => {
@@ -89,9 +91,19 @@ const CartTable = () => {
 
   return (
     <>
-      <table className="cart-table mt-7 border max-w-[880px] min500:text-sm">
+      <MobileCart
+        handleUpdateQuantity={handleUpdateQuantity}
+        handleRemoveClick={handleRemoveClick}
+        decrement={decrement}
+        increment={increment}
+        handleQuantityChange={handleQuantityChange}
+        tempQuantities={tempQuantities}
+        itemTotalPrice={itemTotalPrice}
+        navigate={navigate}
+      />
+      <table className="cart-table mt-7 border max-w-[880px] min500:text-sm md1000:hidden">
         <thead>
-          <tr className="bg-slate-200">
+          <tr className="bg-zinc-100">
             <td className="text-xs font-semibold text-slate-700 min-w-20 p-3">
               RESİM
             </td>

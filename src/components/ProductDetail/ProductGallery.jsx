@@ -65,7 +65,7 @@ const ProductGallery = () => {
           <Spin size="large" />
         </div>
       )}
-      <div className="thumb-slider md1000:h-auto min500:w-[300px]">
+      <div className="thumb-slider md1000:h-auto min500:w-[300px] ">
         <div className="thumbnail-container ">
           {singleProduct?.images.map((item, index) => {
             return (

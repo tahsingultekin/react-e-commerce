@@ -11,13 +11,13 @@ const CartDetail = () => {
   const { cartItems } = useContext(CartContext);
   const navigate = useNavigate();
   return (
-    <div className="w-[82.5rem] md1360:w-[1000px] md1360:ml-10 md1000:w-[760px] min760:w-[500px] min500:w-[370px] min500:ml-0">
+    <div className="w-[82.5rem] md1360:w-[1000px] md1360:ml-10 md1000:ml-0 md1000:w-[760px] min760:w-[500px] min500:w-[370px] min500:ml-0">
       <div className="cart-detail w-full flex flex-col py-12 ">
         {cartItems.length > 0 ? (
-          <div className="md1360:w-[1000px] md1360:ml-10 md1000:w-[760px] min760:w-[500px] min500:w-[370px] min500:ml-0">
+          <div className="md1360:w-[1000px] md1000:ml-5  md1000:w-[760px] min760:ml-0  min760:w-[500px] min500:w-[370px] min500:ml-0">
             <CartTitle />
-            <div className="w-full flex justify-between gap-5 md1360:flex-col  md1360:gap-5 min760:items-start min500:items-center">
-              <div className="md1000:max-w-[750px] md1000:overflow-x-auto min760:max-w-[350px] ">
+            <div className="w-full flex justify-between gap-5  md1360:flex-col  md1360:gap-5 min760:items-start min500:items-center">
+              <div className="md1000:max-w-[760px] min760:w-[500px] min500:w-[370px]">
                 <CartTable />
               </div>
               <div>

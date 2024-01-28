@@ -146,7 +146,7 @@ const ProductInfo = () => {
           <ProductDetailInfo singleProduct={singleProduct} />
         </div>
         <div className="hidden z-[999] min760:block  fixed bottom-0 left-0 right-0 mx-auto w-[500px] min500:w-full">
-          <div className=" flex gap-5 bg-white min760:items-center pl-10 min760:pl-0 min500:justify-evenly min500:gap-0">
+          <div className=" flex gap-5 h-14 bg-white min760:items-center pl-10 min760:pl-0 min500:justify-evenly min500:gap-0">
             <div className="flex relative w-16 h-12 min760:items-center ">
               <input
                 onChange={handleQuantityChange}

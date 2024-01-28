@@ -12,12 +12,12 @@ const ProductDetail = () => {
       <Banner />
       <Header />
       <Navbar />
-      <ContainerLayout>
-        <div className="flex gap-8 my-12 px-12 md1000:flex-col  md1000:w-[760px] min760:w-[500px] min500:items-center">
+      <div className="overflow-x-hidden w-[82.5rem] flex items-center min500:w-[370px]">
+        <div className="flex gap-8 my-12 px-12 md1000:flex-col  md1000:w-[760px] min760:w-[500px] min500:items-center min500:[w-max-370px] min500:overflow-x-hidden">
           <ProductGallery />
           <ProductInfo />
         </div>
-      </ContainerLayout>
+      </div>
 
       <Footer />
     </div>

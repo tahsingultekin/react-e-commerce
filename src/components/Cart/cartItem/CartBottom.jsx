@@ -7,7 +7,7 @@ const CartBottom = () => {
   const { calculateTotalPrice } = useContext(CartContext);
   return (
     <div className=" max-w-[400px] flex justify-end md1360:justify-start min500:text-sm">
-      <div className="cart-bottom bg-slate-100 max-w-[400px] border border-slate-300 p-4 mt-7 tracking-wide">
+      <div className="cart-bottom bg-zinc-50 max-w-[400px] border border-slate-300 p-4 mt-7 tracking-wide">
         <div className="panel-total">
           <div className="cart-panel ">
             <p className="text-sm tracking-wide text-gray-800 ">

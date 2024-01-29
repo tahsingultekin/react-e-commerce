@@ -51,9 +51,11 @@ const SearchResultsPage = () => {
       <Header />
       <Navbar />
       <div className="mb-5 h-20 flex justify-center items-center border-b tracking-wide ">
-        <h1 className="text-xl">Arama Sonuçları Aşağıdaki Gibidir</h1>
+        <h1 className="text-xl min500:text-base">
+          Arama Sonuçları Aşağıdaki Gibidir
+        </h1>
       </div>
-      <div className="flex flex-wrap justify-center mb-5 ">
+      <div className="flex flex-wrap justify-center mb-5 min500:w-[390px] ">
         {searchResults.map((product) => {
           return <ProductItem key={product.id} product={product} />;
         })}

@@ -36,6 +36,13 @@ const TabMenu = () => {
     slidesToScroll: 2,
     responsive: [
       {
+        breakpoint: 3440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1360,
         settings: {
           slidesToShow: 3,
@@ -115,7 +122,7 @@ const TabMenu = () => {
             <Slider
               {...settings}
               key={showcaseKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
+              className="lg3440:w-[1360px] md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
             >
               {showcaseProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;
@@ -127,7 +134,7 @@ const TabMenu = () => {
             <Slider
               {...settings}
               key={bestsellerKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px]   min500:w-[420px] min500:px-0 "
+              className="lg3440:w-[1360px] md1360:w-[960px] md1000:w-[720px] min760:w-[500px]   min500:w-[420px] min500:px-0 "
             >
               {bestsellerProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;
@@ -139,7 +146,7 @@ const TabMenu = () => {
             <Slider
               {...settings}
               key={newOnesKey}
-              className="md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
+              className="lg3440:w-[1360px] md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[420px] min500:px-0"
             >
               {newOnesProducts.map((product) => {
                 return <ProductItem product={product} key={product.id} />;

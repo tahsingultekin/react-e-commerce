@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { CartContext } from "../../context/CartProvider";
 import { useNavigate } from "react-router-dom";
 import CartHover from "./CartHover";
@@ -99,6 +99,7 @@ const Cart = () => {
             />
           </svg>
           {showCartHover && <CartHover showCartHover={showCartHover} />}
+
           {/* CartHover bileşenini burada gösteriliyor */}
           <div className="text-sm">{cartItems && cartItems.length}</div>
         </div>

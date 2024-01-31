@@ -30,19 +30,28 @@ const Slide = (props) => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: true,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: "ease-in-out",
     ...props,
+    responsive: [
+      {
+        breakpoint: 3440,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="relative w-[82.5rem] h-[25rem]">
-      <div className=" flex justify-center items-center">
+      <div className=" flex justify-center items-center w-full h-full">
         <Slider
           key={sliderKey}
           ref={sliderRef}
-          className="relative max-w-6xl md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px] "
+          className="w-[72rem] h-full md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px] "
           {...settings}
         >
           <img
@@ -87,11 +96,11 @@ const Slide = (props) => {
         </Slider>
       </div>
 
-      <div className="w-[82.5rem]">
+      <div className="w-[82.5rem] ">
         <div className=" w-full flex justify-center bg-transparent absolute  top-36 left-0">
-          <div className="relative w-[82.5rem] h-20">
+          <div className="relative w-[82.5rem] h-20 md1360:w-[960px] md1000:w-[720px] min760:w-[500px] min500:w-[380px]">
             <button
-              className="button absolute top-0 left-0 w-20 h-20 md1360:left-3  md1000:left-28 min760:left-1 min500:left-0"
+              className="button absolute top-0 left-0 w-20 h-20 md1360:left-3  md1000:left-1 min760:left-1 min500:left-0"
               onClick={previous}
             >
               <svg
@@ -110,7 +119,7 @@ const Slide = (props) => {
               </svg>
             </button>
             <button
-              className="button absolute top-0 right-0 w-20 h-20 md1360:right-3 md1000:right-28 min760:right-1 min500:right-0"
+              className="button absolute top-0 right-0 w-20 h-20 md1360:right-3 md1000:right-1 min760:right-1 min500:right-0"
               onClick={next}
             >
               <svg

@@ -37,8 +37,8 @@ const Slide = (props) => {
     ...props,
   };
   return (
-    <div className="relative w-full flex justify-center items-center ">
-      <ContainerLayout>
+    <div className="relative w-[82.5rem]">
+      <div className=" flex justify-center items-center">
         <Slider
           key={sliderKey}
           ref={sliderRef}
@@ -85,9 +85,9 @@ const Slide = (props) => {
             className="h-[25rem] object-cover object-right-top"
           />
         </Slider>
-      </ContainerLayout>
+      </div>
 
-      <ContainerLayout>
+      <div className="w-[82.5rem]">
         <div className=" w-full flex justify-center bg-transparent absolute  top-36 left-0">
           <div className="relative w-[82.5rem] h-20">
             <button
@@ -130,7 +130,7 @@ const Slide = (props) => {
             </button>
           </div>
         </div>
-      </ContainerLayout>
+      </div>
     </div>
   );
 };

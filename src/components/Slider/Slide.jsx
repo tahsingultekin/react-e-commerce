@@ -37,7 +37,7 @@ const Slide = (props) => {
     ...props,
   };
   return (
-    <div className="relative w-[82.5rem]">
+    <div className="relative w-[82.5rem] h-[25rem]">
       <div className=" flex justify-center items-center">
         <Slider
           key={sliderKey}
